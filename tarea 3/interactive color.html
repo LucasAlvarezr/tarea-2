@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Picker Centrado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Interactive Color Picker</h1>
+  </header>
+  <div class="container">
+    <div id="color-display"></div>
+    <div class="sliders">
+      <label style="color: red;">Rojo:
+        <input id="red" type="range" min="0" max="255" value="0" />
+      </label>
+      <label style="color: green;">Verde:
+        <input id="green" type="range" min="0" max="255" value="0" />
+      </label>
+      <label style="color: blue;">Azul:
+        <input id="blue" type="range" min="0" max="255" value="0" />
+      </label>
+    </div>
+    <div class="color-options">
+      <div class="color-box" style="background-color: red;" data-color="rgb(255, 0, 0)"></div>
+      <div class="color-box" style="background-color: green;" data-color="rgb(0, 255, 0)"></div>
+      <div class="color-box" style="background-color: blue;" data-color="rgb(0, 0, 255)"></div>
+      <div class="color-box" style="background-color: yellow;" data-color="rgb(255, 255, 0)"></div>
+      <div class="color-box" style="background-color: cyan;" data-color="rgb(0, 255, 255)"></div>
+      <div class="color-box" style="background-color: magenta;" data-color="rgb(255, 0, 255)"></div>
+      <div class="color-box" style="background-color: black;" data-color="rgb(0, 0, 0)"></div>
+      <div class="color-box" style="background-color: white;" data-color="rgb(255, 255, 255)"></div>
+    </div>
+  </div>
+  <script src="interactive.js"></script>
+</body>
+</html>
