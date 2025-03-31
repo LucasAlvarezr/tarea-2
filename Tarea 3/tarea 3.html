@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>TODO</h1>
+  </header>
+  <main class="container">
+    <section class="categories">
+      <button class="category active">Personal</button>
+      <button class="category">Profesional</button>
+      <button class="category add">+</button>
+    </section>
+    <section class="add-task">
+      <input type="text" placeholder="What do you need to do?" class="task-input">
+    </section>
+    <section class="tasks-wrapper">
+      <section class="tasks">
+        <div class="task completed">
+          <span class="status-circle completed-circle">✔</span>
+          Personal Work No. 1
+        </div>
+        <div class="task">
+          <span class="status-circle pending-circle"></span>
+          Personal Work No. 2
+        </div>
+        <div class="task">
+          <span class="status-circle pending-circle"></span>
+          Personal Work No. 3
+        </div>
+        <div class="task completed">
+          <span class="status-circle completed-circle">✔</span>
+          Personal Work No. 4
+        </div>
+        <div class="task">
+          <span class="status-circle pending-circle"></span>
+          Personal Work No. 5
+        </div>
+        <footer class="clear">Clear completed</footer>
+      </section>
+    </section>
+  </main>
+  <script src="interactive.js"></script>
+</body>
+</html>

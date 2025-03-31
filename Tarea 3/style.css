@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0px; /* Elimina el margen por defecto del body */
+    margin-top: -40px; /* Ajusta el margen superior */
+}
+
+.header {
+    background-image: linear-gradient(to right, rgb(104, 194, 219) 50%, rgb(0, 60, 255) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    text-align: center;
+    
+    height: auto;
+    margin: 0 auto; /* Centra el header horizontalmente */
+    padding: 5px 0;
+    display: block; /* Cambié a block para mejor control de la alineación */
+    width: fit-content; /* Ajusta el ancho al contenido */
+    margin-bottom: 0; /* Elimina el margen inferior del header */
+}
+
+.categories {
+    display: flex;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.categories {
+    display: flex;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.category {
+    border: none;
+    color: rgb(79, 139, 228);
+    padding: 10px 20px;
+    flex: 1;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.category.active {
+    border-bottom: 2px solid rgb(181, 140, 64);
+    font-weight: bold;
+}
+
+.category.add {
+    width: 10%;
+    padding: 10px 0;
+    border: none;
+    background-color: #007BFF;
+    font-weight: bold;
+    font-size: 1.5em;
+    flex-grow: 0.1; 
+}
+
+.category:hover {
+    background-color: #81eef6;
+}
+    
+    .add-task {
+        margin-bottom: 20px;
+    }
+    
+    .task-input {
+        width: 60%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; /* Asegura que sea un elemento de bloque */
+    }
+    
+    .tasks-wrapper {
+        background-color: #f5e8c8;
+        border-radius: 20px;
+        width: 60%;
+        margin: 0 auto; 
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+
+    .tasks {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .task {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        padding: 10px 0; 
+        color: #333;
+    }
+    
+    .task::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #007BFF; 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    
+    .completed {
+        text-decoration: line-through;
+        color: #888;
+    }
+    
+    
+    .status-circle {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid #ccc; 
+    }
+    
+    .pending-circle {
+        color: transparent; 
+    }
+    
+    .completed-circle {
+        color: orange; 
+        border-color: orange; 
+        background-color: transparent; 
+    }
+    .clear{
+        display: flex;
+        color:aquamarine;
+        justify-content: flex-end;
+        text-decoration: underline;
+        margin-top: 20px;
+    }
+
+    .delete-icon {
+        width: 30px; /* Tamaño similar al texto */
+        height: 30px;
+        cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+        margin-left: auto; /* Empuja la imagen hacia la derecha */
+        display: inline-block; /* Asegura que sea un elemento en línea */
+    }
